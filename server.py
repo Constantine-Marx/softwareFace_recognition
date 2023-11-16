@@ -43,6 +43,7 @@ while time.time() - process_time < 60:
     execution_time = end_time - start_time
     execution_time = execution_time.seconds + execution_time.microseconds / 1000000
 
+
     print(f"Face recognition time: {execution_time}s")
     # 序列化整个列表为 JSON 字符串
     serialized_data = json.dumps(face_pixels)
